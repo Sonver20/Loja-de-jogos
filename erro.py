@@ -1,0 +1,2 @@
+class SistemaError(Exception):
+    pass
