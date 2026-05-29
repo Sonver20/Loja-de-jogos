@@ -182,5 +182,5 @@ END;""")
 
     def gasto_total(self, id_cliente):
         with self.conexao:
-            total = self.cursor.execute("SELECT SUM(jogos.preco) FROM vendas JOIN jogos ON jogos.id = vendas.jogo_id WHERE cliente_id = ?", (id_cliente,)).fetchone()[0
+            total = self.cursor.execute("SELECT SUM(jogos.preco) FROM vendas JOIN jogos ON jogos.id = vendas.jogo_id WHERE cliente_id = ?", (id_cliente,)).fetchone()[0]
             return total
